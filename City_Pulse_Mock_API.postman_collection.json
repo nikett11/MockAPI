@@ -1,0 +1,672 @@
+{
+	"info": {
+		"_postman_id": "YOUR_POSTMAN_COLLECTION_ID",
+		"name": "City Pulse Mock API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_collection_link": "https://www.postman.com/collections/YOUR_POSTMAN_COLLECTION_ID"
+	},
+	"item": [
+		{
+			"name": "Events",
+			"item": [
+				{
+					"name": "Get All Events",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app/mock-events",
+							"protocol": "https",
+							"host": [
+								"city-pulse-mock-api-1011723893887",
+								"asia-south1",
+								"run",
+								"app"
+							],
+							"path": [
+								"mock-events"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Event by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app/mock-events/{{id}}",
+							"protocol": "https",
+							"host": [
+								"city-pulse-mock-api-1011723893887",
+								"asia-south1",
+								"run",
+								"app"
+							],
+							"path": [
+								"mock-events",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Event",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Sample Event\",\n    \"description\": \"This is a sample event description.\",\n    \"date\": \"2025-07-21\",\n    \"location\": \"Sample Location\",\n    \"source\": \"Sample Source\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app/mock-events",
+							"protocol": "https",
+							"host": [
+								"city-pulse-mock-api-1011723893887",
+								"asia-south1",
+								"run",
+								"app"
+							],
+							"path": [
+								"mock-events"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Event",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Updated Sample Event\",\n    \"description\": \"This is an updated sample event description.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app/mock-events/{{id}}",
+							"protocol": "https",
+							"host": [
+								"city-pulse-mock-api-1011723893887",
+								"asia-south1",
+								"run",
+								"app"
+							],
+							"path": [
+								"mock-events",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Event",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app/mock-events/{{id}}",
+							"protocol": "https",
+							"host": [
+								"city-pulse-mock-api-1011723893887",
+								"asia-south1",
+								"run",
+								"app"
+							],
+							"path": [
+								"mock-events",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "News",
+			"item": [
+				{
+					"name": "Get All News",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app/mock-news",
+							"protocol": "https",
+							"host": [
+								"city-pulse-mock-api-1011723893887",
+								"asia-south1",
+								"run",
+								"app"
+							],
+							"path": [
+								"mock-news"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get News by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app/mock-news/{{id}}",
+							"protocol": "https",
+							"host": [
+								"city-pulse-mock-api-1011723893887",
+								"asia-south1",
+								"run",
+								"app"
+							],
+							"path": [
+								"mock-news",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add News",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Sample News Article\",\n    \"content\": \"This is the content of a sample news article.\",\n    \"author\": \"John Doe\",\n    \"published_date\": \"2025-07-21\",\n    \"source\": \"News Outlet\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app/mock-news",
+							"protocol": "https",
+							"host": [
+								"city-pulse-mock-api-1011723893887",
+								"asia-south1",
+								"run",
+								"app"
+							],
+							"path": [
+								"mock-news"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update News",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Updated News Article\",\n    \"content\": \"This is the updated content of a sample news article.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app/mock-news/{{id}}",
+							"protocol": "https",
+							"host": [
+								"city-pulse-mock-api-1011723893887",
+								"asia-south1",
+								"run",
+								"app"
+							],
+							"path": [
+								"mock-news",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete News",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app/mock-news/{{id}}",
+							"protocol": "https",
+							"host": [
+								"city-pulse-mock-api-1011723893887",
+								"asia-south1",
+								"run",
+								"app"
+							],
+							"path": [
+								"mock-news",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tweets",
+			"item": [
+				{
+					"name": "Get All Tweets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app/mock-tweets",
+							"protocol": "https",
+							"host": [
+								"city-pulse-mock-api-1011723893887",
+								"asia-south1",
+								"run",
+								"app"
+							],
+							"path": [
+								"mock-tweets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Tweet by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app/mock-tweets/{{id}}",
+							"protocol": "https",
+							"host": [
+								"city-pulse-mock-api-1011723893887",
+								"asia-south1",
+								"run",
+								"app"
+							],
+							"path": [
+								"mock-tweets",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Tweet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_id\": \"user123\",\n    \"text\": \"This is a sample tweet.\",\n    \"timestamp\": \"2025-07-21T10:00:00Z\",\n    \"source\": \"Twitter\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app/mock-tweets",
+							"protocol": "https",
+							"host": [
+								"city-pulse-mock-api-1011723893887",
+								"asia-south1",
+								"run",
+								"app"
+							],
+							"path": [
+								"mock-tweets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Tweet",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"text\": \"This is an updated sample tweet.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app/mock-tweets/{{id}}",
+							"protocol": "https",
+							"host": [
+								"city-pulse-mock-api-1011723893887",
+								"asia-south1",
+								"run",
+								"app"
+							],
+							"path": [
+								"mock-tweets",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Tweet",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app/mock-tweets/{{id}}",
+							"protocol": "https",
+							"host": [
+								"city-pulse-mock-api-1011723893887",
+								"asia-south1",
+								"run",
+								"app"
+							],
+							"path": [
+								"mock-tweets",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app/mock-users",
+							"protocol": "https",
+							"host": [
+								"city-pulse-mock-api-1011723893887",
+								"asia-south1",
+								"run",
+								"app"
+							],
+							"path": [
+								"mock-users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app/mock-users/{{id}}",
+							"protocol": "https",
+							"host": [
+								"city-pulse-mock-api-1011723893887",
+								"asia-south1",
+								"run",
+								"app"
+							],
+							"path": [
+								"mock-users",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"testuser\",\n    \"email\": \"test@example.com\",\n    \"password\": \"password123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app/mock-users",
+							"protocol": "https",
+							"host": [
+								"city-pulse-mock-api-1011723893887",
+								"asia-south1",
+								"run",
+								"app"
+							],
+							"path": [
+								"mock-users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"updated_test@example.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app/mock-users/{{id}}",
+							"protocol": "https",
+							"host": [
+								"city-pulse-mock-api-1011723893887",
+								"asia-south1",
+								"run",
+								"app"
+							],
+							"path": [
+								"mock-users",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app/mock-users/{{id}}",
+							"protocol": "https",
+							"host": [
+								"city-pulse-mock-api-1011723893887",
+								"asia-south1",
+								"run",
+								"app"
+							],
+							"path": [
+								"mock-users",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Weather",
+			"item": [
+				{
+					"name": "Get All Weather Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app/mock-weather",
+							"protocol": "https",
+							"host": [
+								"city-pulse-mock-api-1011723893887",
+								"asia-south1",
+								"run",
+								"app"
+							],
+							"path": [
+								"mock-weather"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Weather by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app/mock-weather/{{id}}",
+							"protocol": "https",
+							"host": [
+								"city-pulse-mock-api-1011723893887",
+								"asia-south1",
+								"run",
+								"app"
+							],
+							"path": [
+								"mock-weather",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Weather Data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"location\": \"Bangalore\",\n    \"temperature\": 25.5,\n    \"condition\": \"Partly Cloudy\",\n    \"humidity\": 70,\n    \"wind_speed\": 10,\n    \"timestamp\": \"2025-07-21T10:00:00Z\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app/mock-weather",
+							"protocol": "https",
+							"host": [
+								"city-pulse-mock-api-1011723893887",
+								"asia-south1",
+								"run",
+								"app"
+							],
+							"path": [
+								"mock-weather"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Weather Data",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"temperature\": 26.0,\n    \"condition\": \"Sunny\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app/mock-weather/{{id}}",
+							"protocol": "https",
+							"host": [
+								"city-pulse-mock-api-1011723893887",
+								"asia-south1",
+								"run",
+								"app"
+							],
+							"path": [
+								"mock-weather",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Weather Data",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app/mock-weather/{{id}}",
+							"protocol": "https",
+							"host": [
+								"city-pulse-mock-api-1011723893887",
+								"asia-south1",
+								"run",
+								"app"
+							],
+							"path": [
+								"mock-weather",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://city-pulse-mock-api-1011723893887.asia-south1.run.app",
+			"type": "string"
+		}
+	]
+}

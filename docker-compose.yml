@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      # Mounts the current directory on the host to /app in the container
+      - .:/app
+    env_file:
+      - ./.env
+    environment:
+      - PYTHONPATH=/app
+
+  

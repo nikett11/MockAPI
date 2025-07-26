@@ -1,0 +1,142 @@
+[
+  {
+    "location": {
+      "city": "Bengaluru",
+      "area": "Koramangala",
+      "latitude": 12.9352,
+      "longitude": 77.6245
+    },
+    "temperature": 24.5,
+    "description": "Moderate rain",
+    "forecast": [
+      {"day": "Today", "temp_min": 22, "temp_max": 26, "condition": "Rainy"},
+      {"day": "Tomorrow", "temp_min": 23, "temp_max": 27, "condition": "Partly Cloudy"}
+    ]
+  },
+  {
+    "location": {
+      "city": "Bengaluru",
+      "area": "Indiranagar",
+      "latitude": 12.9719,
+      "longitude": 77.6412
+    },
+    "temperature": 25.0,
+    "description": "Overcast clouds",
+    "forecast": [
+      {"day": "Today", "temp_min": 23, "temp_max": 28, "condition": "Overcast"},
+      {"day": "Tomorrow", "temp_min": 24, "temp_max": 29, "condition": "Cloudy"}
+    ]
+  },
+  {
+    "location": {
+      "city": "Bengaluru",
+      "area": "Jayanagar",
+      "latitude": 12.9250,
+      "longitude": 77.5880
+    },
+    "temperature": 23.8,
+    "description": "Light drizzle",
+    "forecast": [
+      {"day": "Today", "temp_min": 21, "temp_max": 25, "condition": "Light Rain"},
+      {"day": "Tomorrow", "temp_min": 22, "temp_max": 26, "condition": "Rain Showers"}
+    ]
+  },
+  {
+    "location": {
+      "city": "Bengaluru",
+      "area": "Electronic City",
+      "latitude": 12.8477,
+      "longitude": 77.6743
+    },
+    "temperature": 26.1,
+    "description": "Partly cloudy",
+    "forecast": [
+      {"day": "Today", "temp_min": 24, "temp_max": 29, "condition": "Partly Cloudy"},
+      {"day": "Tomorrow", "temp_min": 25, "temp_max": 30, "condition": "Sunny Intervals"}
+    ]
+  },
+  {
+    "location": {
+      "city": "Bengaluru",
+      "area": "Whitefield",
+      "latitude": 12.9698,
+      "longitude": 77.7500
+    },
+    "temperature": 24.0,
+    "description": "Intermittent rain",
+    "forecast": [
+      {"day": "Today", "temp_min": 22, "temp_max": 26, "condition": "Intermittent Rain"},
+      {"day": "Tomorrow", "temp_min": 23, "temp_max": 27, "condition": "Cloudy with Showers"}
+    ]
+  },
+  {
+    "location": {
+      "city": "Bengaluru",
+      "area": "Malleshwaram",
+      "latitude": 13.0061,
+      "longitude": 77.5673
+    },
+    "temperature": 23.5,
+    "description": "Heavy rain",
+    "forecast": [
+      {"day": "Today", "temp_min": 21, "temp_max": 24, "condition": "Heavy Rain"},
+      {"day": "Tomorrow", "temp_min": 22, "temp_max": 25, "condition": "Rain"}
+    ]
+  },
+  {
+    "location": {
+      "city": "Bengaluru",
+      "area": "Basavanagudi",
+      "latitude": 12.9416,
+      "longitude": 77.5730
+    },
+    "temperature": 24.2,
+    "description": "Cloudy with occasional rain",
+    "forecast": [
+      {"day": "Today", "temp_min": 22, "temp_max": 26, "condition": "Cloudy with Rain"},
+      {"day": "Tomorrow", "temp_min": 23, "temp_max": 27, "condition": "Partly Sunny"}
+    ]
+  },
+  {
+    "location": {
+      "city": "Bengaluru",
+      "area": "Yelahanka",
+      "latitude": 13.1007,
+      "longitude": 77.5963
+    },
+    "temperature": 25.5,
+    "description": "Scattered thunderstorms",
+    "forecast": [
+      {"day": "Today", "temp_min": 23, "temp_max": 28, "condition": "Thunderstorms"},
+      {"day": "Tomorrow", "temp_min": 24, "temp_max": 29, "condition": "Scattered Showers"}
+    ]
+  },
+  {
+    "location": {
+      "city": "Bengaluru",
+      "area": "Marathahalli",
+      "latitude": 12.9560,
+      "longitude": 77.7011
+    },
+    "temperature": 24.8,
+    "description": "Light rain showers",
+    "forecast": [
+      {"day": "Today", "temp_min": 22, "temp_max": 27, "condition": "Light Rain"},
+      {"day": "Tomorrow", "temp_min": 23, "temp_max": 28, "condition": "Cloudy"}
+    ]
+  },
+  {
+    "location": {
+      "city": "Bengaluru",
+      "area": "HSR Layout",
+      "latitude": 12.9116,
+      "longitude": 77.6387
+    },
+    "temperature": 24.0,
+    "description": "Drizzly",
+    "forecast": [
+      {"day": "Today", "temp_min": 21, "temp_max": 25, "condition": "Drizzle"},
+      {"day": "Tomorrow", "temp_min": 22, "temp_max": 26, "condition": "Rainy"}
+    ]
+  }
+]

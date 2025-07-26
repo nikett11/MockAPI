@@ -1,0 +1,43 @@
+body {
+    padding-top: 56px; /* Adjust for fixed navbar */
+}
+
+.list-group-item {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.list-group-item h5 {
+    color: #0056b3;
+}
+
+.list-group-item small {
+    color: #6c757d;
+}
+
+.list-group-item .d-flex.justify-content-around small {
+    margin: 0 5px;
+}
+
+.username-link {
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.weather-item-card .d-flex.w-100.justify-content-between.align-items-center {
+    align-items: center;
+}
+
+.weather-info-text {
+    flex-grow: 1;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.weather-item-card .badge {
+    margin-left: 10px;
+}

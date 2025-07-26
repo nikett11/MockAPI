@@ -1,0 +1,474 @@
+{
+  "info": {
+    "_postman_id": "a0b1c2d3-e4f5-6789-0123-456789abcdef",
+    "name": "MockAPI Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Tweets",
+      "item": [
+        {
+          "name": "Get All Tweets",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/mock-tweets",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["mock-tweets"]
+            }
+          }
+        },
+        {
+          "name": "Get Tweet by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/mock-tweets/{{tweet_id}}",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["mock-tweets", "{{tweet_id}}"]
+            }
+          }
+        },
+        {
+          "name": "Add New Tweet",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"author_id\": \"12345\",\n    \"text\": \"This is a new mock tweet!\",\n    \"username\": \"mockuser\",\n    \"source\": {\"id\": \"mock-source\", \"name\": \"Mock App\"},\n    \"public_metrics\": {\"retweet_count\": 0, \"reply_count\": 0, \"like_count\": 0, \"quote_count\": 0},\n    \"lang\": \"en\",\n    \"possibly_sensitive\": false,\n    \"entities\": {},\n    \"referenced_tweets\": [],\n    \"reply_settings\": \"everyone\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/mock-tweets",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["mock-tweets"]
+            }
+          }
+        },
+        {
+          "name": "Update Tweet by ID",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"text\": \"This tweet has been updated!\",\n    \"public_metrics\": {\"like_count\": 10}\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/mock-tweets/{{tweet_id}}",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["mock-tweets", "{{tweet_id}}"]
+            }
+          }
+        },
+        {
+          "name": "Delete Tweet by ID",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/mock-tweets/{{tweet_id}}",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["mock-tweets", "{{tweet_id}}"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "News",
+      "item": [
+        {
+          "name": "Get All News",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/mock-news",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["mock-news"]
+            }
+          }
+        },
+        {
+          "name": "Get News by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/mock-news/{{news_id}}",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["mock-news", "{{news_id}}"]
+            }
+          }
+        },
+        {
+          "name": "Add New News Article",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"source\": {\"id\": \"mock-news\", \"name\": \"Mock News\"},\n    \"author\": \"Mock Author\",\n    \"title\": \"Breaking News: Mock API is Awesome!\",\n    \"description\": \"A detailed description of why this mock API is so great.\",\n    \"url\": \"http://example.com/mock-news-article\",\n    \"urlToImage\": \"http://example.com/mock-news-image.jpg\",\n    \"content\": \"The full content of the mock news article.\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/mock-news",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["mock-news"]
+            }
+          }
+        },
+        {
+          "name": "Update News Article by ID",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"title\": \"Updated News Title\",\n    \"description\": \"This news article has been updated.\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/mock-news/{{news_id}}",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["mock-news", "{{news_id}}"]
+            }
+          }
+        },
+        {
+          "name": "Delete News Article by ID",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/mock-news/{{news_id}}",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["mock-news", "{{news_id}}"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Events",
+      "item": [
+        {
+          "name": "Get All Events",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/mock-events",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["mock-events"]
+            }
+          }
+        },
+        {
+          "name": "Get Event by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/mock-events/{{event_id}}",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["mock-events", "{{event_id}}"]
+            }
+          }
+        },
+        {
+          "name": "Add New Event",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Mock API Workshop\",\n    \"start_date\": \"2025-08-01T09:00:00Z\",\n    \"end_date\": \"2025-08-01T17:00:00Z\",\n    \"location\": {\"address\": \"123 Mock St\", \"city\": \"Mockville\"}\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/mock-events",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["mock-events"]
+            }
+          }
+        },
+        {
+          "name": "Update Event by ID",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Updated Mock API Workshop\",\n    \"location\": {\"city\": \"New Mockville\"}\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/mock-events/{{event_id}}",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["mock-events", "{{event_id}}"]
+            }
+          }
+        },
+        {
+          "name": "Delete Event by ID",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/mock-events/{{event_id}}",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["mock-events", "{{event_id}}"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Weather",
+      "item": [
+        {
+          "name": "Get All Weather Forecasts",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/mock-weather",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["mock-weather"]
+            }
+          }
+        },
+        {
+          "name": "Get Weather Forecast by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/mock-weather/{{weather_id}}",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["mock-weather", "{{weather_id}}"]
+            }
+          }
+        },
+        {
+          "name": "Add New Weather Forecast",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"location\": {\"city\": \"Mockville\", \"country\": \"MV\"},\n    \"temperature\": 25.5,\n    \"description\": \"Partly cloudy with a chance of mock.\",\n    \"forecast\": [{\"day\": \"Monday\", \"temp\": 26}, {\"day\": \"Tuesday\", \"temp\": 24}]\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/mock-weather",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["mock-weather"]
+            }
+          }
+        },
+        {
+          "name": "Update Weather Forecast by ID",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"temperature\": 28.0,\n    \"description\": \"Sunny with a high chance of mock.\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/mock-weather/{{weather_id}}",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["mock-weather", "{{weather_id}}"]
+            }
+          }
+        },
+        {
+          "name": "Delete Weather Forecast by ID",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/mock-weather/{{weather_id}}",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["mock-weather", "{{weather_id}}"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "Get All Users",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/mock-users",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["mock-users"]
+            }
+          }
+        },
+        {
+          "name": "Get User by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/mock-users/{{user_id}}",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["mock-users", "{{user_id}}"]
+            }
+          }
+        },
+        {
+          "name": "Add New User",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"id\": \"unique_user_id_123\",\n    \"name\": \"New Mock User\",\n    \"username\": \"newmockuser\",\n    \"description\": \"A newly added mock user.\",\n    \"profile_image_url\": \"https://example.com/new_profile.png\",\n    \"protected\": false,\n    \"url\": \"https://newmockuser.com\",\n    \"verified\": false\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/mock-users",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["mock-users"]
+            }
+          }
+        },
+        {
+          "name": "Update User by ID",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Updated User Name\",\n    \"description\": \"This user's description has been updated.\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/mock-users/{{user_id}}",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["mock-users", "{{user_id}}"]
+            }
+          }
+        },
+        {
+          "name": "Delete User by ID",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/mock-users/{{user_id}}",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["mock-users", "{{user_id}}"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

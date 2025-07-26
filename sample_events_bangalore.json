@@ -1,0 +1,248 @@
+[
+  {
+    "name": "Bangalore Tech Summit 2025",
+    "start_date": "2025-11-19T09:00:00+05:30",
+    "end_date": "2025-11-21T18:00:00+05:30",
+    "location": {
+      "address": "Bangalore International Exhibition Centre (BIEC), Tumkur Road",
+      "city": "Bengaluru",
+      "latitude": 13.0667,
+      "longitude": 77.4833
+    }
+  },
+  {
+    "name": "Bengaluru Marathon 2025",
+    "start_date": "2025-10-12T06:00:00+05:30",
+    "duration_hours": 5.0,
+    "location": {
+      "address": "Kanteerava Stadium, Kasturba Road",
+      "city": "Bengaluru",
+      "latitude": 12.9704,
+      "longitude": 77.5961
+    }
+  },
+  {
+    "name": "Morning Yoga Session",
+    "start_date": "2025-07-21T07:00:00+05:30",
+    "location": {
+      "address": "Cubbon Park, Bengaluru",
+      "city": "Bengaluru"
+    },
+    "duration_hours": 1.5
+  },
+  {
+    "name": "Local Farmers Market",
+    "start_date": "2025-07-21T09:00:00+05:30",
+    "location": {
+      "address": "Organic Mandya, Jayanagar, Bengaluru",
+      "city": "Bengaluru"
+    },
+    "duration_hours": 5.0
+  },
+  {
+    "name": "Beginner's Photography Workshop",
+    "start_date": "2025-07-22T10:00:00+05:30",
+    "location": {
+      "address": "Chitrakala Parishath, Kumara Krupa Road, Bengaluru",
+      "city": "Bengaluru"
+    },
+    "duration_hours": 4.0
+  },
+  {
+    "name": "Stand-up Comedy Night",
+    "start_date": "2025-07-22T20:00:00+05:30",
+    "location": {
+      "address": "That Comedy Club, Koramangala, Bengaluru",
+      "city": "Bengaluru"
+    },
+    "duration_hours": 2.0
+  },
+  {
+    "name": "Pottery Class for All Ages",
+    "start_date": "2025-07-23T11:00:00+05:30",
+    "location": {
+      "address": "Clay Station Art Studios, HSR Layout, Bengaluru",
+      "city": "Bengaluru"
+    },
+    "duration_hours": 3.0
+  },
+  {
+    "name": "Live Music at The Humming Tree",
+    "start_date": "2025-07-23T21:00:00+05:30",
+    "location": {
+      "address": "The Humming Tree, Indiranagar, Bengaluru",
+      "city": "Bengaluru"
+    }
+  },
+  {
+    "name": "Tech Startup Meetup",
+    "start_date": "2025-07-24T18:30:00+05:30",
+    "location": {
+      "address": "WeWork, Residency Road, Bengaluru",
+      "city": "Bengaluru"
+    },
+    "duration_hours": 2.5
+  },
+  {
+    "name": "Street Food Festival",
+    "start_date": "2025-07-24T16:00:00+05:30",
+    "location": {
+      "address": "Food Street, VV Puram, Bengaluru",
+      "city": "Bengaluru"
+    },
+    "duration_hours": 6.0
+  },
+  {
+    "name": "Book Reading and Discussion",
+    "start_date": "2025-07-25T17:00:00+05:30",
+    "location": {
+      "address": "Atta Galatta, Koramangala, Bengaluru",
+      "city": "Bengaluru"
+    },
+    "duration_hours": 1.5
+  },
+  {
+    "name": "Weekend Trek to Nandi Hills",
+    "start_date": "2025-07-26T05:00:00+05:30",
+    "location": {
+      "address": "Nandi Hills, Chikkaballapur District",
+      "city": "Bengaluru"
+    },
+    "duration_hours": 8.0
+  },
+  {
+    "name": "Art Exhibition: Modern Indian Art",
+    "start_date": "2025-07-26T10:00:00+05:30",
+    "location": {
+      "address": "National Gallery of Modern Art, Palace Road, Bengaluru",
+      "city": "Bengaluru"
+    },
+    "duration_hours": 7.0
+  },
+  {
+    "name": "Salsa Dance Workshop",
+    "start_date": "2025-07-27T14:00:00+05:30",
+    "location": {
+      "address": "La Casa Del Tango, Indiranagar, Bengaluru",
+      "city": "Bengaluru"
+    },
+    "duration_hours": 2.0
+  },
+  {
+    "name": "Board Game Cafe Meetup",
+    "start_date": "2025-07-27T19:00:00+05:30",
+    "location": {
+      "address": "Dice N Dine, Koramangala, Bengaluru",
+      "city": "Bengaluru"
+    },
+    "duration_hours": 3.0
+  },
+  {
+    "name": "Photography Walk: Old Bangalore",
+    "start_date": "2025-07-28T08:00:00+05:30",
+    "location": {
+      "address": "Basavanagudi, Bengaluru",
+      "city": "Bengaluru"
+    },
+    "duration_hours": 3.0
+  },
+  {
+    "name": "Coding Bootcamp Info Session",
+    "start_date": "2025-07-28T18:00:00+05:30",
+    "location": {
+      "address": "Think Bridge, HSR Layout, Bengaluru",
+      "city": "Bengaluru"
+    },
+    "duration_hours": 1.0
+  },
+  {
+    "name": "Open Mic Night",
+    "start_date": "2025-07-29T20:00:00+05:30",
+    "location": {
+      "address": "Urban Solace, Ulsoor, Bengaluru",
+      "city": "Bengaluru"
+    },
+    "duration_hours": 2.0
+  },
+  {
+    "name": "Gardening Workshop: Urban Farming",
+    "start_date": "2025-07-29T10:00:00+05:30",
+    "location": {
+      "address": "My Dream Garden, Jakkur, Bengaluru",
+      "city": "Bengaluru"
+    },
+    "duration_hours": 3.0
+  },
+  {
+    "name": "Heritage Walk: Bangalore Fort",
+    "start_date": "2025-07-30T09:00:00+05:30",
+    "location": {
+      "address": "Bangalore Fort, KR Market, Bengaluru",
+      "city": "Bengaluru"
+    },
+    "duration_hours": 2.5
+  },
+  {
+    "name": "Craft Beer Tasting",
+    "start_date": "2025-07-30T19:00:00+05:30",
+    "location": {
+      "address": "Toit Brewpub, Indiranagar, Bengaluru",
+      "city": "Bengaluru"
+    },
+    "duration_hours": 3.0
+  },
+  {
+    "name": "Cycling Tour: Lakeside Trails",
+    "start_date": "2025-07-31T06:30:00+05:30",
+    "location": {
+      "address": "Agara Lake, HSR Layout, Bengaluru",
+      "city": "Bengaluru"
+    },
+    "duration_hours": 4.0
+  },
+  {
+    "name": "Cooking Class: South Indian Cuisine",
+    "start_date": "2025-07-31T11:00:00+05:30",
+    "location": {
+      "address": "Slurp Studio, Indiranagar, Bengaluru",
+      "city": "Bengaluru"
+    },
+    "duration_hours": 3.5
+  },
+  {
+    "name": "Movie Screening: Independent Film",
+    "start_date": "2025-08-01T19:30:00+05:30",
+    "location": {
+      "address": "Everest Theatre, Residency Road, Bengaluru",
+      "city": "Bengaluru"
+    },
+    "duration_hours": 2.0
+  },
+  {
+    "name": "Pet Adoption Drive",
+    "start_date": "2025-08-02T10:00:00+05:30",
+    "location": {
+      "address": "CUPA, Koramangala, Bengaluru",
+      "city": "Bengaluru"
+    },
+    "duration_hours": 6.0
+  },
+  {
+    "name": "DIY Workshop: Handmade Jewelry",
+    "start_date": "2025-08-02T14:00:00+05:30",
+    "location": {
+      "address": "Bloom & Grow, Koramangala, Bengaluru",
+      "city": "Bengaluru"
+    },
+    "duration_hours": 3.0
+  },
+  {
+    "name": "Photography Exhibition: Cityscapes",
+    "start_date": "2025-08-03T11:00:00+05:30",
+    "location": {
+      "address": "Karnataka Chitrakala Parishath, Bengaluru",
+      "city": "Bengaluru"
+    },
+    "duration_hours": 5.0
+  }
+]
